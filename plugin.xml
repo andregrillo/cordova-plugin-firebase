@@ -15,7 +15,7 @@
   </js-module>
 
   
-  <dependency id="cordova-outsystems-FirebaseCore" url="../cordova-outsystems-FirebaseCore"/>
+  <dependency id="cordova-outsystems-FirebaseCore" url="git@github.com:andregrillo/cordova-outsystems-FirebaseCore.git"/>
   <!--<dependency id="cordova-outsystems-FirebaseCore" url="https://github.com/andregrillo/cordova-outsystems-FirebaseCore"/>
 
    
