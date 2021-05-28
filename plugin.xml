@@ -14,10 +14,16 @@
     <clobbers target="fp" />
   </js-module>
 
+  
+  <dependency id="cordova-outsystems-FirebaseCore" url="../cordova-outsystems-FirebaseCore"/>
+  <!--<dependency id="cordova-outsystems-FirebaseCore" url="https://github.com/andregrillo/cordova-outsystems-FirebaseCore"/>
+
+   
   <hook type="before_plugin_install" src="scripts/shared/installDependencies.js" />
   <hook type="before_plugin_install" src="scripts/shared/unzipAndCopyConfigurations.js" />
+  
   <hook type="before_plugin_install" src="scripts/shared/unzipAndCopySound.js" />
-
+-->
   <preference name="APP_DOMAIN" default="/" />
   <preference name="APP_PATH" default="/" />
 
@@ -61,7 +67,7 @@
       <meta-data android:name="com.google.firebase.messaging.default_notification_channel_id" android:value="@string/default_notification_channel_id"/>
     </config-file>
 
-    <resource-file src="google-services.json" target="./google-services.json" />
+    <!-- <resource-file src="google-services.json" target="./google-services.json" /> -->
     <resource-file src="src/android/cordova-plugin-firebase-strings.xml" target="res/values/cordova-plugin-firebase-strings.xml" />
     <resource-file src="src/android/cordova-plugin-firebase-colors.xml" target="res/values/cordova-plugin-firebase-colors.xml" />
 
@@ -102,7 +108,7 @@
       <string>production</string>
     </config-file>
 
-    <resource-file src="GoogleService-Info.plist" target="./GoogleService-Info.plist" />
+    <!-- <resource-file src="GoogleService-Info.plist" target="./GoogleService-Info.plist" /> -->
 
     <header-file src="src/ios/AppDelegate+FirebasePlugin.h" />
     <source-file src="src/ios/AppDelegate+FirebasePlugin.m" />
